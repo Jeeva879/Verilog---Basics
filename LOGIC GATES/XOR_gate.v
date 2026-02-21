@@ -9,6 +9,7 @@ module xor_gate (a,b,out);
   output out;
   
   assign out = a ^ b;
+  //assign out = (!a & b) | (a & !b);          // Boolean Expression for XOR gate
 endmodule
 
 //--------------------
