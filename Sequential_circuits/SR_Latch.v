@@ -34,8 +34,7 @@ module sr_latch_tb;
     sr_latch dut (.s(s),.r(r),.q(q));
     
     initial begin
-        $monitor("Time=%0t | S=%b | R=%b | Q=%b", 
-                 $time, s, r, q);
+        $monitor("S=%b | R=%b | Q=%b",s, r, q);
     end
     
     initial begin
